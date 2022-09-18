@@ -10,19 +10,50 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+const quotes = [
+  {quote: 'People throw rocks at things that shine', 
+   source:'Taylor Swift',
+   citation: 'Ours',
+   year:'2010'
+  },
+  {quote: 'When you commit to transforming your life you commit to getting very uncomfortable over and over and over again.',
+   source: 'Jen Sincero'
+  },
+  {quote:'Complexity is the enemy of execution',
+   source:'Tony Robbins'
+  },
+  {quote:'You do not find the happy life. You make it.',
+   source:'Camilla Eyring Kimball'
+  },
+  {quote: 'Stay close to anything that makes you glad you are alive.',
+   source: 'Hafez'
+  }
+];
 
-
+console.log(quotes);
 
 /***
  * `getRandomQuote` function
 ***/
 
-
+function getRandomQuote () {
+  const randomNumber = Math.floor(Math.random()*5);
+  return quotes[randomNumber];
+}
 
 /***
  * `printQuote` function
 ***/
-
+function printQuote (){
+  const randomQuote = getRandomQuote();
+  const quoteProperties = <p class="quote"> randomQuote.quote </p> <p class="source"> randomQuote.source
+  if (quote.citation){
+  <span class="citation">randomQuote.citation</span>
+  if (quote.year)
+  <span class="year">randomQuote.year</span></p>
+  } 
+  </p>
+  }
 
 
 /***
